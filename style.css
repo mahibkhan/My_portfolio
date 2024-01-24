@@ -322,6 +322,7 @@ a.btn:nth-child(2)::before{
     align-items: center;
     grid-gap: 2em;
     background: var(--secon-bg-color);
+    
 }
 
 .About.imag-about{
@@ -330,8 +331,9 @@ a.btn:nth-child(2)::before{
 }
 
 .About.imag-about{
-    max-width: 400px;
-    height: auto;
+    max-width: 500px;
+    margin-top: 80px;
+    
 }
 
 
@@ -426,3 +428,279 @@ font-size: 1rem;
         border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
     }
 }  */
+
+/* services section----------------------------------------------------------------------------- */
+.main-text{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--hover-color);
+}
+
+.main-text h2{
+    font-weight: 700;
+    font-size: var(--noramal-font);
+}
+
+.main-text span{
+    color:#fdadfd;
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+
+
+.section-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+}
+
+.section-services .service-box{
+    flex: 1 1 18rem;
+    padding: 2rem 1rem 2rem;
+    text-align: center;
+    background: var(--secon-bg-color);
+    transition: transform .4s;
+    border-radius: 10px;
+}
+
+.service-btn{
+    width: auto;
+    justify-content: center;
+
+}
+
+.service-btn{
+    width: auto;
+    justify-content: center;
+}
+
+.service-box:hover{
+transform: translateY(-.7rem);
+}
+
+
+.service-icon{
+    border: 2px solid var(--hover-color);
+    padding: 2rem;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 50%;
+    position: relative;
+    color: var(--hover-color);
+    box-shadow: var(--none-box-shadow);
+    outline: 3px solid var(--bg-color);
+}
+
+.service-box h3{
+    margin-top: 10px;
+    font-size: 1.5rem;
+
+}
+
+.service-box p{
+    margin: .5rem 0 1.5rem 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fdadfd;
+    line-height: 1.6;
+}
+
+
+
+
+/* skills SECTION--------------------------------------------------------------->*/
+
+.Skills{
+    background: var(--secon-bg-color);
+    margin-top: 30px;
+}
+
+
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.skill-bar{
+    margin-bottom: 2.3rem;
+}
+
+
+.skill-main h3{
+    margin-bottom: 2rem;
+    font-size: var(--noramal-font);
+    text-align: center;
+}
+
+
+
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--hover-color);
+    border-radius: 25px;
+    /* box-shadow: var(--none-box-shadow); */
+}
+
+.skill-bar .bar .html{
+    width: 80%;
+    animation: html 2s;
+
+}
+
+.skill-bar .bar .css{
+    width: 75%;
+    animation: css 3s;
+
+}
+
+.skill-bar .bar .Bootstrap{
+    width: 80%;
+    animation: Bootstrap 4s;
+
+}
+
+.skill-bar .bar .Javascript{
+    width: 68%;
+    animation: Javascript 4s;
+
+
+}
+
+
+@keyframes html{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes Bootstrap{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes Javascript{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 68%;
+    }
+}
+
+
+
+/* skill right ----------------------------------------------------------*/
+
+.professional{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box{
+    margin: 10px 0;
+    flex: 1 1 15rem;
+    position: relative;
+}
+
+.box .text{
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.box .text big{
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box .text small{
+    display: block;
+    font-weight: 600;
+    
+}
+
+.circle{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+}
+
+.circle .points{
+    width: 5px;
+    height: 10px;
+    background-color: var(--bg-color);
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc (var(--i)*120deg)) translateY(-45px);
+
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+}
+
+
+
+@keyframes glow{
+    0%{
+        background: var(--bg-color);
+        box-shadow: none;
+    }
+90%{
+    background: var(--hover-color);
+    box-shadow: var(--none-box-shadow);
+}
+}
