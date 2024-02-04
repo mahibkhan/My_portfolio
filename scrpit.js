@@ -44,3 +44,24 @@ setInterval(changeText,3000)
 
 // mix it up portfilo section
 var mixer = mixitup('.protfolio-gallery');
+
+// 
+
+let menuli = document.querySelectorAll('header ul li a');
+let section = document.querySelector('section');
+function activeMenu(){
+    let len = section.length;
+    while(--len && window.scrollY + 97 < section[len].offsetLop){}
+    menuli.forEach(sec => sec.classList.remove("active"));
+    menuli[len].classList.add("active");
+}
+
+activeMenu();
+window.addEventListener("scroll",activeMenu);
+
+// sticky navbar//////////////////////////////////////////////
+const header = document.querySelector("header");
+window.addEventListener("scroll",function(){
+    header.classList.toggle("sticky",this.window.scrollY > 50)
+}
+)
