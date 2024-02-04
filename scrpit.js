@@ -42,3 +42,5 @@ setInterval(changeText,3000)
 
 
 
+// mix it up portfilo section
+var mixer = mixitup('.protfolio-gallery');
